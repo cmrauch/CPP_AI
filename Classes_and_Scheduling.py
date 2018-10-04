@@ -13,20 +13,17 @@ class Group_3:
         day_tuple = Class.day.split('/') 
         for i in range(len(day_tuple)):
           if Class.startTime <= time <= Class.endTime and (day_tuple[i] == day): 
-            canMeet = False
-          
+            canMeet = False        
     #print results
     if canMeet:
       print('We can meet on ' + day + ' at ' + str(time))
     else:
       print("We can't meet on " + day + " at " + str(time))   
-
-   
-
+      
   def print_members(self):
     print(self.memberList)
     
-  # === Class GroupMember ===
+#Class GroupMember
 class GroupMember:
   def __init__(self, name, major, classSchedule):
     self.name = name
@@ -40,8 +37,7 @@ class GroupMember:
       self.classSchedule[i].print_class_info()
     print('')
       
-      
-  #Class Class
+#Class Class
 class Class:
   def __init__(self, dep, cN, dy, sT, eT):
     self.department = dep
