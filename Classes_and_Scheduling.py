@@ -27,7 +27,7 @@ class Group_3:
     print(self.memberList)
     
   # === Class GroupMember ===
-  class GroupMember:
+class GroupMember:
   def __init__(self, name, major, classSchedule):
     self.name = name
     self.major = major
